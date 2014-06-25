@@ -9,6 +9,17 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
+@synthesize Ball;
+
++ (id)sharedManager {
+    static AppDelegate *sharedMyManager = nil;
+    @synchronized(self) {
+        if (sharedMyManager == nil)
+            sharedMyManager = [[self alloc] init];
+        sharedMyManager.Ball = [UIImageView new];
+    }
+    return sharedMyManager;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

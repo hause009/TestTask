@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+{
+    UIImageView * Ball;
+}
+@property UIImageView * Ball;
++ (id)sharedManager;
 @property (strong, nonatomic) UIWindow *window;
 
 @end
