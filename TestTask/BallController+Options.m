@@ -11,12 +11,14 @@
 @implementation BallController (Options)
 
 //object parameters
--(void)setParameters:(UIImageView *)ObjectBall
+-(UIImageView*)setParameters:(UIImageView *)ObjectBall
 {
     [ObjectBall setFrame:CGRectMake(100, 100, 50, 50)];
     ObjectBall.layer.cornerRadius = 25;
     ObjectBall.layer.masksToBounds = YES;
     ObjectBall.backgroundColor = [UIColor redColor];
+    
+    return ObjectBall;
 }
 
 //sets coordinates

@@ -9,6 +9,6 @@
 #import "BallController.h"
 
 @interface BallController (Options)
--(void)setParameters:(UIImageView*)ObjectBall;
+-(UIImageView*)setParameters:(UIImageView*)ObjectBall;
 -(CGRect)setBallFrame:(UIImageView*)ObjectBall BallX:(CGFloat)CordX BallY:(CGFloat)CordY;
 @end

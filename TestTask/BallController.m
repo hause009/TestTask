@@ -22,7 +22,7 @@
     [super viewDidLoad];
     
     sharedManager = [AppDelegate sharedManager];
-    [self setParameters:sharedManager.Ball];
+    sharedManager.Ball =[self setParameters:sharedManager.Ball];
     [self.view addSubview:sharedManager.Ball];
     
     [Button setTitle: @"Play" forState: UIControlStateNormal];
